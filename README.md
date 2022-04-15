@@ -169,7 +169,7 @@ We now have a donut with sprinkles on it. We will be rendering this next.
 ![almostthere](https://user-images.githubusercontent.com/103074186/163543683-78d25da4-f09b-4e33-94fb-9e0cca6b7998.PNG)
 
 
-I used Houdini's inhouse render, there are 3rd party render programs that can be useed and each has their own pros and cons.
+I used Houdini's inhouse render, there are 3rd party render programs that can be used and each has their own pros and cons.
 
 
 ![renderedfdoniut](https://user-images.githubusercontent.com/103074186/163634851-63f44eaf-92ab-488c-bc83-64157097cfa8.PNG)
