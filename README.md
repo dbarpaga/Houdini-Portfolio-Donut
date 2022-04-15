@@ -130,9 +130,43 @@ The Icing will be black, now we can add another color node before the null node 
 
 ![pinkdonut](https://user-images.githubusercontent.com/103074186/163530321-1a671b1f-824f-4b32-b89b-60140df6e741.PNG)
 
+Next up, sprinkles
+
+We start from our color node that we have before the merge node
+
+Group node> set to primitives, disable base group. Enable keep by normals. Direction to 0,1,0. Spread angle to where sprinkles looks viable. 
+
+Add scatter node, relax iterations to 1. Select the group that was just created. 
+
+Attach a peak node after the scatter. Distance of 0.01
+
+Create a tube > Polygon type > Endcaps > Add vertex Normals >  Radius Scale is 0.2 and on the Z- Axis
+
+Create a poly bevel node for the tube > Round shape > Divisions to 4 > Exclusions > Ignore Flat Edges should be enabled > Increase Max normal angle to 45
+Offset distance to 0.1
+
+![flatedges](https://user-images.githubusercontent.com/103074186/163540991-062f3a0b-2515-4e5f-9cf1-966cfdf46cb8.PNG)
+
+Add normal node > point normals
+
+Then we will copy these point normals over to our peak for the icing with Copy To Points node.
+
+Then create attribrandomize. Change attribute name to scale. Adjust min and max sizes
+
+![sprinklesettings](https://user-images.githubusercontent.com/103074186/163542166-ca38ba8d-9ec7-438c-8f81-c39284feb623.PNG)
+
+Add another attribrandomize 
+
+Change the attribute to orient and change dimesnions to 4. Change to direction or orientation. Enable Cone Angle, randomize cone angle and the bias toward direction.
+
+One more attribrandomize this time for the color of the sprinkles. Change distribution to two values. Adjust the values for the colors you want.
+
+Create Null node, attach to the copytopoints node and then the merge node we have from before. 
+
+We now have a donut with sprinkles on it. We will be rendering this next.
 
 
-
+![almostthere](https://user-images.githubusercontent.com/103074186/163543683-78d25da4-f09b-4e33-94fb-9e0cca6b7998.PNG)
 
 
 
