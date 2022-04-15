@@ -82,12 +82,25 @@ Another attribute create after the second normal
 
 Naming this as weight, setting the value as 1 for group 2 and 0 everywhere else
 
-Add another attribblur
+Add another attribblur, set iterations to 8
 
+Next we add a remap node, adjust the scale in order to define our icing further
 
+Next add a scatter node, and we will use density and weight as our attribute
 
+Increase the force count to 32,000 and the relax iterations to 32
 
+![scatter1](https://user-images.githubusercontent.com/103074186/163520075-3316c99e-78e6-4ea7-9296-7c2a6f632b69.PNG)
 
+Next add a peak node to lift the icing off of the donut slightly, a value of 0.02 or less should be sufficient. as always adjust it to your liking. 
+
+Next node is VDB from particles, change voxel size to 0.01 and the point radius scale to 0.03
+
+![lookinglikefrosting](https://user-images.githubusercontent.com/103074186/163521320-02dc7e19-8dcc-41fb-a52b-20bcfaa8a083.PNG)
+
+add attribnoise node to the peak node. pscale for the attribute. click the box saying enable remap ramp. click the left arrow, put the value as 0.8 the right as 1.3 and then set element size under noise pattern to 0.5   
+
+![remapramp](https://user-images.githubusercontent.com/103074186/163523285-c9cac686-2c91-4a6a-8ddb-6c82af432e97.PNG)
 
 
 
