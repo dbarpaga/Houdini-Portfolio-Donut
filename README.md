@@ -114,6 +114,30 @@ Re-enable attribnoise. set the noise level operation to multiply. Add VDbreshape
 
 As we can see, our "icing" is beginning to take shape
 
+Increase Iterations to smooth out the icing
+
+Add VDB Reshape and set it to erode, offset is 1. This will decrease the thickness of the icing
+
+Add convert VDB node, set to polygons
+
+Attach another normal node and attribblur. Set normal to point normals. Blur to P and N and 4 bluur iterations. 
+
+Create two Null nodes, attach one to this last blur and the other to the subdivide for the dough
+
+Create a merge node to connect the two null nodes 
+
+The Icing will be black, now we can add another color node before the null node for the icing to chaqnge it to whatever color we like
+
+![pinkdonut](https://user-images.githubusercontent.com/103074186/163530321-1a671b1f-824f-4b32-b89b-60140df6e741.PNG)
+
+
+
+
+
+
+
+
+
 
 
 
