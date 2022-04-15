@@ -102,13 +102,17 @@ add attribnoise node to the peak node. pscale for the attribute. click the box s
 
 ![remapramp](https://user-images.githubusercontent.com/103074186/163523285-c9cac686-2c91-4a6a-8ddb-6c82af432e97.PNG)
 
+Add a remap node before our pscale node
 
+Temporarily disable attribnoise node. in attribremap we will change weight to pscale. expand the ramp and we then set up points to make a b spline
 
+![moreramp](https://user-images.githubusercontent.com/103074186/163523835-deb76018-a0db-44ec-8164-7b2385bcdff9.PNG)
 
+Re-enable attribnoise. set the noise level operation to multiply. Add VDbreshape node to VBDparticles. Then add a VDB Smooth SDF Node to the VDB reshape node
 
+![moreicinglike](https://user-images.githubusercontent.com/103074186/163524372-363fbbd8-1835-4e75-8aaa-18c8797292bd.PNG)
 
-
-
+As we can see, our "icing" is beginning to take shape
 
 
 
