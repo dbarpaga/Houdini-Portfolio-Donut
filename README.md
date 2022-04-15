@@ -48,6 +48,60 @@ Double click the vopnode
 
 You will then see 2 default nodes. Global input and Global output
 
+We will create a bind for our weight in. tab > bind and it will be for weight and a float type. 
+
+![bind](https://user-images.githubusercontent.com/103074186/163490824-00b1198f-9aca-4e54-82c9-d459fbe0127e.PNG)
+
+Attach the nodes as so and change the scale 
+
+![displace1](https://user-images.githubusercontent.com/103074186/163491205-5191d987-efad-4aaf-9cdb-6cb0ffbf7519.PNG)
+
+Next is to add a mountain node to our original tree, NOTE: For the sake of brevity I will only be adding screen shots sparingly going forward.
+
+Adjust the scale and noise to your liking. we are simply giving the donut a slightly irregular shape. 
+
+We will be adding a color node to adjust the color of our donut
+
+Set the color type to be ramp from attribute, with weight as our attribute
+
+Adjust colors to your choice, we can add a subdivide node if needed to increase the resolution
+
+![donutcolors](https://user-images.githubusercontent.com/103074186/163500676-5ca17789-748b-4ea5-a695-fbfa8053d771.PNG)
+
+We use an attribute delete node to remove our weight attribute in order to see our donut. Then we create a new group node. Disable base group, choose points and enable keep by normals
+
+Adjust the spread angle to cover the top section of the donut. Adjust direction to 0,1,0
+
+![topdonut](https://user-images.githubusercontent.com/103074186/163502399-c8d05d3f-9329-4232-a2cf-ba92adf20b64.PNG)
+
+Add a noise node to attributedelete, change the attribute to N. This is to randomize our icing that we will be adding shortly. Noise volume to multiplicative 
+
+Add a second normal node after the group
+
+Another attribute create after the second normal
+
+Naming this as weight, setting the value as 1 for group 2 and 0 everywhere else
+
+Add another attribblur
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
